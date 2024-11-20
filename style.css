@@ -1,0 +1,341 @@
+
+html{
+    font-family: 'Libre Franklin', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+a {
+    color: black; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+h2{
+    font-weight: 400;
+}
+
+/* Hover state */
+a:hover {
+    color: gray; /* Change to gray when hovered */
+}
+
+/* Active state */
+a:active {
+    color: #EAADAD; /* Change to #EAADAD when active (clicked) */
+}
+
+p, li, a{
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.section-title{
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 250px 2fr;
+    margin: 0;
+    padding: 0 200px; /* Add padding of 50px on each side */
+    box-sizing: border-box; 
+    background: radial-gradient(circle 1000px at right center, #EAADAD, #FFFFFF 30%);
+    background-attachment: fixed;
+    
+    /* Ensure padding is included in the body's width */
+}
+
+button{
+    border: 1px black solid;
+    border-radius: 30px;
+    width: 300px;
+    padding: 10px;
+    background-color: transparent;
+}
+/* ---------------- NAVIGATION ---------------- */
+
+#navigation{
+    /* width: 250px;  */
+    /* padding: 20px; */
+    position: sticky;
+    top: 0;
+    height: 100vh; 
+    overflow-y: auto;
+    align-content: center; 
+    border-right: 1px black solid;
+}
+
+.about-short h2{
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 600;
+    line-height: 25px;
+    padding-bottom: 20px;   
+}
+
+.logo-main img{
+    display: grid;
+    padding-bottom: 50px;
+    width: 200px;
+    fill: black;
+    filter: grayscale(1) contrast(3.5) brightness(1);
+}
+
+.nav-links li, a{
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style-type: none;
+    padding-left: 0;
+   
+}
+
+.nav-links li{
+    border-bottom: 1px black solid;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+}
+
+.nav-links ul{
+    line-height: 35px;
+    padding-left: 0;
+}
+
+.nav-socials li, .nav-socials a{
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.nav-socials a{
+    font-size: 30px;
+    color: black;
+    padding: 5px;
+}
+
+.nav-socials ul{
+    padding-left: 0;
+    padding-top: 20px;
+}
+
+/* ---------------- INTRO ---------------- */
+
+#content{
+    display: grid;
+}
+
+#intro{
+    text-align: right;
+    display: grid;
+    border-bottom: 1px black solid;
+    padding-left: 250px;
+    justify-content: right;
+    padding-bottom: 50px; 
+}
+
+#intro h1{
+    font-weight: 600;
+    text-align: right;
+    font-size: 40px;
+}
+
+#intro button{
+    margin-left: auto; /* Push the button to the right within the grid */
+    justify-self: end;
+    margin-top: 16px;
+}
+
+/* ---------------- POTFOLIO ---------------- */
+
+#portfolio{
+    padding-top: 30px;
+    /* padding-bottom: 30px; */
+    text-align: right;
+}
+
+#portfolio h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.folio-info h4{
+    padding-bottom: 30px;
+    font-weight: 100px;
+    font-size: 16px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.folio-content p{
+    margin: 0;
+}
+
+.folio-info{
+    margin-left: 100px;
+    text-align: left;
+    align-content: center;
+}
+
+.folio-content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-content: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px black solid;
+}
+.folio-img {
+    align-content: center;
+    justify-self: end;
+    margin-left: auto; 
+
+}
+.folio-img img{
+    width: 200px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+/* ---------------- ABOUT ME ---------------- */
+
+#aboutme{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: right;
+    border-bottom: 1px black solid;
+}
+
+#aboutme h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+
+#aboutme p{
+    margin-left: 100px;
+}
+
+#education h3,
+#skillset h3{
+    text-align: left;
+    margin-left: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    
+   
+}
+
+.schools{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 100px;
+    
+}
+
+.schools ul, #skillset ul{
+    padding-left: 0px;
+
+}
+
+.schools h4, #skillset h4{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.schools li, #skillset li{
+    list-style-type: none;
+}
+
+#education-info{
+    text-align: left;
+
+}
+
+.subsec-title{
+   
+    border-bottom: 1px solid black;
+}
+
+#skillset{
+    text-align: left;
+}
+
+#soft-skills, #tech-skills{
+    margin-left: 100px;
+}
+
+footer h4{
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+/* ---------------- CONTACT---------------- */
+
+#contact{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: right;
+    
+}
+
+#contact h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+
+#contact-form {
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 500px;
+    margin-left: auto; /* Align the form to the right */
+}
+
+#contact-form label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contact-form button {
+    align-self: end; /* Align to the start of the grid cell */
+    justify-self: end;
+    justify-items: end;
+    justify-content: right;
+   text-transform: uppercase;
+        border: 1px black solid;
+        border-radius: 30px;
+        width: 300px; /* Same width as other buttons */
+        padding: 10px;
+        background-color: transparent;
+        color: black;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        margin-top: 15px; /* Space above the button */
+        display: inline-block; 
+}
