@@ -2,6 +2,30 @@
 html{
     font-family: 'Libre Franklin', sans-serif;
     letter-spacing: 1.5px;
+
+    /* font-family: "swear-display", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-family: "swear-display", serif;
+    font-weight: 400;
+    font-style: italic;
+
+    font-family: "swear-display", serif;
+    font-weight: 700;
+    font-style: normal;
+
+    font-family: "swear-display", serif;
+    font-weight: 700;
+    font-style: italic;
+
+    font-family: "swear-display-cilati", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-family: "swear-display-cilati", sans-serif;
+    font-weight: 700;
+    font-style: normal; */
 }
 
 a {
@@ -49,11 +73,22 @@ body {
 }
 
 button{
-    border: 1px black solid;
-    border-radius: 30px;
-    width: 300px;
-    padding: 10px;
-    background-color: transparent;
+    align-self: end; /* Align to the start of the grid cell */
+    justify-self: end;
+    justify-items: end;
+    justify-content: right;
+   text-transform: uppercase;
+        border: 1px black solid;
+        border-radius: 30px;
+        width: 300px; /* Same width as other buttons */
+        padding: 10px;
+        background-color: transparent;
+        color: black;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        margin-top: 15px; /* Space above the button */
+        display: inline-block; 
 }
 /* ---------------- NAVIGATION ---------------- */
 
@@ -70,17 +105,18 @@ button{
 
 .about-short h2{
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 20px;
     text-align: left;
-    font-weight: 600;
-    line-height: 25px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
     padding-bottom: 20px;   
 }
 
 .logo-main img{
     display: grid;
     padding-bottom: 50px;
-    width: 200px;
+    width: 150px;
     fill: black;
     filter: grayscale(1) contrast(3.5) brightness(1);
 }
@@ -133,16 +169,30 @@ button{
     text-align: right;
     display: grid;
     border-bottom: 1px black solid;
-    padding-left: 250px;
+    padding-left: 100px;
     justify-content: right;
     padding-bottom: 50px; 
 }
 
 #intro h1{
-    font-weight: 600;
+    font-family: "swear-display", serif;
+    font-weight: 500;
+    font-style: italic;
     text-align: right;
-    font-size: 40px;
+    font-size: 90px;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeSlide 1.5s ease-out forwards;
+    margin-bottom: 20px; 
+    margin-top: 50px; 
 }
+
+@keyframes fadeSlide {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
 #intro button{
     margin-left: auto; /* Push the button to the right within the grid */
@@ -152,62 +202,83 @@ button{
 
 /* ---------------- POTFOLIO ---------------- */
 
-#portfolio{
+#portfolio {
     padding-top: 30px;
-    /* padding-bottom: 30px; */
-    text-align: right;
+    padding-left: 10px; /* Maintains the left padding for alignment */
+    text-align: right; /* Keeps the original text alignment */
+    border-bottom: 1px solid black;
+    padding-bottom: 70px;
 }
 
-#portfolio h2{
+#portfolio h2 {
     text-transform: uppercase;
     font-weight: 400;
+    font-style: normal;
     letter-spacing: 3px;
 }
 
-.folio-info h4{
-    padding-bottom: 30px;
-    font-weight: 100px;
+.folio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Adds spacing between items */
+    padding-left: 100px; /* Aligns the grid content with the padding */
+}
+
+.folio-content {
+    text-align: center;
+    background-color: rgba(249, 249, 249, 0.3);
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+    border: 1px solid black; /* Optional: Card border */
+    border-radius: 8px; /* Optional: Rounded corners */
+    position: relative; /* To ensure the bottom line is positioned correctly */
+    overflow: hidden; /* Prevents unwanted overflow */
+    display: flex;
+    flex-direction: column; /* Stacks image and info vertically */
+    justify-content: space-between; /* Pushes content apart */
+}
+
+.folio-img img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px 8px 0 0; /* Optional: Rounded top corners */
+}
+
+.folio-info {
+    padding-top: 10px;
+    margin-top: auto; /* Ensures info stays at the bottom if content height varies */
+}
+
+.folio-info h4 {
+    padding-bottom: 10px;
+    font-weight: 400; /* Corrected font-weight */
     font-size: 16px;
     margin-top: 0;
     text-transform: uppercase;
 }
 
-.folio-content p{
+.folio-content p {
     margin: 0;
+    font-weight: 100; /* Corrected font-weight */
+    font-size: 14px;
 }
 
-.folio-info{
-    margin-left: 100px;
-    text-align: left;
-    align-content: center;
+.folio-content::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    
 }
 
-.folio-content{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-content: center;
-    justify-content: space-between;
-    padding-top: 25px;
-    padding-bottom: 20px;
-    border-bottom: 1px black solid;
-}
-.folio-img {
-    align-content: center;
-    justify-self: end;
-    margin-left: auto; 
-
-}
-.folio-img img{
-    width: 200px;
-    border: 1px black solid;
-    border-radius: 10px;
-}
 
 /* ---------------- ABOUT ME ---------------- */
 
 #aboutme{
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     text-align: right;
     border-bottom: 1px black solid;
 }
@@ -272,8 +343,13 @@ button{
     text-align: left;
 }
 
-#soft-skills, #tech-skills{
+
+.skill-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
     margin-left: 100px;
+
+    
 }
 
 footer h4{
@@ -284,27 +360,43 @@ footer h4{
 
 /* ---------------- CONTACT---------------- */
 
-#contact{
+#contact {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: right;
-    
+    padding-left: 100px;
 }
 
-#contact h2{
+#contact h2 {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 3px;
 }
 
-
 #contact-form {
     text-transform: uppercase;
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-    max-width: 500px;
-    margin-left: auto; /* Align the form to the right */
+    gap: 30px;
+    max-width: 650px;
+}
+
+/* Grid container for name and email */
+.form-row-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Message container spans full width */
+#message-container {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
 }
 
 #contact-form label {
@@ -313,29 +405,24 @@ footer h4{
     margin-bottom: 5px;
 }
 
-#contact-form input,
-#contact-form textarea {
+#contact-form input {
     padding: 10px;
     border: 1px solid black;
     border-radius: 5px;
     font-size: 16px;
+    width: 100%;
+    background-color: rgba(249, 249, 249, 0.3);
+}
+
+#message-container textarea {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    height: 120px;
 }
 
 #contact-form button {
-    align-self: end; /* Align to the start of the grid cell */
-    justify-self: end;
-    justify-items: end;
-    justify-content: right;
-   text-transform: uppercase;
-        border: 1px black solid;
-        border-radius: 30px;
-        width: 300px; /* Same width as other buttons */
-        padding: 10px;
-        background-color: transparent;
-        color: black;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.3s ease, color 0.3s ease;
-        margin-top: 15px; /* Space above the button */
-        display: inline-block; 
+    margin-top: 20px;
 }
