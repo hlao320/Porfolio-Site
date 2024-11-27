@@ -2,30 +2,6 @@
 html{
     font-family: 'Libre Franklin', sans-serif;
     letter-spacing: 1.5px;
-
-    /* font-family: "swear-display", serif;
-    font-weight: 400;
-    font-style: normal;
-
-    font-family: "swear-display", serif;
-    font-weight: 400;
-    font-style: italic;
-
-    font-family: "swear-display", serif;
-    font-weight: 700;
-    font-style: normal;
-
-    font-family: "swear-display", serif;
-    font-weight: 700;
-    font-style: italic;
-
-    font-family: "swear-display-cilati", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-    font-family: "swear-display-cilati", sans-serif;
-    font-weight: 700;
-    font-style: normal; */
 }
 
 a {
@@ -89,6 +65,7 @@ button{
         transition: background-color 0.3s ease, color 0.3s ease;
         margin-top: 15px; /* Space above the button */
         display: inline-block; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 /* ---------------- NAVIGATION ---------------- */
 
@@ -209,6 +186,7 @@ button{
     border-bottom: 1px solid black;
     padding-bottom: 70px;
 }
+
 
 #portfolio h2 {
     text-transform: uppercase;
@@ -362,9 +340,9 @@ footer h4{
 
 #contact {
     padding-top: 30px;
-    padding-bottom: 30px;
     text-align: right;
     padding-left: 100px;
+    padding-bottom: 100px;
 }
 
 #contact h2 {
@@ -426,3 +404,162 @@ footer h4{
 #contact-form button {
     margin-top: 20px;
 }
+
+/* ---------------- PORTFOLIO PAGES ---------------- */
+
+#folio-page{
+    display: grid;
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+
+
+#folio-page h1{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 3px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+
+#folio-page h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 3px;
+    font-size: 16px;
+
+}
+
+#folio-page h3{
+    text-transform: uppercase;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+#content-tags p{
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+#cocotrade-banner {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    justify-content: center; /* Centers the entire grid */
+    align-items: center; /* Vertically centers content */
+    
+    text-align: right; /* Text aligns to the right */
+    
+    padding: 30px 20px;
+    margin-top: 50px; 
+    
+    background-image: url('CocoTrade/CocoTrade-Cover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: 20% center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    color: #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 30px;
+
+     /* Optional: prevents full-width stretch */
+   
+}
+
+
+#trout-banner {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    justify-content: center; /* Centers the entire grid */
+    align-items: center; /* Vertically centers content */
+    
+    text-align: right; /* Text aligns to the right */
+    
+    padding: 30px 20px;
+    margin-top: 50px; 
+    
+    background-image: url('Trout/Trout-Cover.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: 20% center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    color: #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 30px;
+
+     /* Optional: prevents full-width stretch */
+   
+}
+
+#strava-banner {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    justify-content: center; /* Centers the entire grid */
+    align-items: center; /* Vertically centers content */
+    
+    text-align: right; /* Text aligns to the right */
+    
+    padding: 30px 20px;
+    margin-top: 50px; 
+    
+    background-image: url('Strava/StravaCover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: 20% center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    color: #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 30px;
+
+     /* Optional: prevents full-width stretch */
+   
+}
+
+
+#folio-page img{
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(249, 249, 249, 0.3);
+    
+}
+
+#pagination{
+    border-top: 1px black solid;
+    padding-top: 50px;
+    display: inline-flex;
+    padding-left: 100px;
+    justify-content: right;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    text-align: right;
+    padding-bottom: 100px;
+}
+
+#pagination p{
+    font-weight: 100;
+    font-size: 12px;
+    margin: 0px;
+}
+
+#pagination h3{
+    margin: 0px;
+    font-weight: 400px;
+
+}
+  
+  #pagination img {
+    max-width: 150px;
+    border-radius: 8px;
+  }
+
+
+ 
