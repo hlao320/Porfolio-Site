@@ -3,49 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Hazel Lao</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/fea91536ee.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/yfm5pgf.css">
-    <link rel="icon" href="hl-branding.png" type="image/png">
-    <link rel="shortcut icon" href="hl-branding.png" type="image/png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/yfm5pgf.css">
+<script src="burger.js"></script>
+
+<link rel="icon" href="hl-branding.png" type="image/png">
+<link rel="shortcut icon" href="hl-branding.png" type="image/png">
+
 </head>
 <body>
     <section id="navigation">
         <nav>
-            <div class="info-side">
+            <div class="nav-header">
                 <div class="logo-main">
                     <a href="index.html">
-                        <img src="hl-branding.png" alt="">
+                        <img src="HL-NewLogo.png" alt="">
                     </a>
                 </div>
+                <button class="burger-menu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <div class="nav-content">
                 <div class="about-short">
-                    <h2>Hazel Lao<br>UI/UX Design<br>Vancouver, BC</h2>
+                    <h2>Hazel Lao<br>
+                    UI/UX Design</h2>
+                    
                 </div>
+                
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#aboutme">About Me</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-socials">
+                    <ul>
+                        <li><a href="mailto:hzlalejandra@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+                        <li><a href="https://www.linkedin.com/hazellao/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.behance.net/hazelalejandra" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
+                    </ul>
+                </div>
+    
+                <footer>
+                    <h4>Designed and coded by <br> Hazel Lao Ⓒ 2024</h4>
+                </footer>
             </div>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="index.html#portfolio">Portfolio</a></li>
-                    <li><a href="#aboutme">About Me</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="nav-socials">
-                <ul>
-                    <li><a href="mailto:hzlalejandra@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-                    <li><a href="https://www.linkedin.com/hazellao/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://www.behance.net/hazelalejandra" target="_blank"><i class="fa-brands fa-square-behance"></i></a></li>
-                </ul>
-            </div>
-            <footer>
-                <h4>Designed and coded by <br> Hazel Lao Ⓒ 2024</h4>
-            </footer>
         </nav>
     </section>
 
@@ -64,12 +78,61 @@
 
         <div id="content-body">
             <h2>About the project</h2>
-            <p>CocoTrade is an all-in-one web app that offers a paperless inventory and sales management system to copra traders. With CocoTrade, business owners can easily view their monthly and daily transactions. Additionally, they can set their own copra prices based on the world market price and keep track of their purchases, observing trends from daily to yearly.</p>
+            <p>CocoTrade is a comprehensive B2B platform designed specifically for small to medium-sized copra trading intermediaries, distributors, and processors. This case study details how we developed a solution that addresses the unique challenges faced by copra traders in the supply chain, enhancing efficiency, transparency, and profitability across the ecosystem.</p>
         </div>
 
         <div id="content-body">
             <h2>PROBLEM STATEMENT</h2>
-            <p>My family in the Philippines has been in the copra trading business for several decades. This is a common business venture in the urban, provincial areas of the Philippines due to its natural abundance of coconuts. However due to this geographical constraint, the daily fluctuation of copra market rates is challenging to calculate and update for copra sellers. Logging stocks and inventory are done manually, making it time-consuming to keep track of copra from each seller. Our team found an opportunity to help copra business owners address the problems with their manual processes..</p>
+            <p>Copra traders in the Philippines, often based in provincial areas, this limitation keeps them reliant on traditional methods like phone calls, paper records, and in-person negotiations.</p>
+            <p>These outdated practices contribute to operational bottlenecks, impacting price fluctuations, inventory management, and communication between suppliers and buyers. This affects profit margins and scalability. CocoTrade was conceived to modernize these processes through a digital platform, designed specifically to address the unique needs of trading professionals in these regions.</p>
+        </div>
+
+        <!-- <div id="content-body">
+            <h2>Research Insights</h2>
+            <p>Our research focused on in-depth interviews with key players in the copra trading ecosystem, including distributors, aggregators, and processors.</p>
+
+            <p>Key findings included:</p>
+
+            <ol>
+                <li>
+                    Middlemen spend an average of 20 hours a week handling manual documentation, inventory tracking, and transaction processes
+                </li>
+                <li>
+                    Price volatility makes it difficult to accurately value inventory and set buying prices for copra from farmers
+                </li>
+                <li>
+                    Manual operational processes create bottlenecks that slow down decision-making
+                </li>
+                <li>
+                    Lack of a centralized system for tracking shipment schedules and copra warehouse stock creates operational inefficiencies
+                </li>
+                <li>
+                    Existing platforms fail to meet the specific needs of the small-scale copra traders in the industry.
+                </li>
+            </ol>
+                
+            <p>
+        
+                These insights directly shaped our design priorities, emphasizing the need for a specialized platform to streamline operations and address the unique challenges faced by copra trading professionals.</p>
+        </div> -->
+
+        <div id="content-body">
+            <h2>Objectives</h2>
+            
+            <ol>
+                <li>
+                    Develop a specialized platform for the operational management of copra trading intermediaries
+                </li>
+                <li>Provide market intelligence and pricing analytics to support informed decision-making</li>
+                <li>Streamline inventory management, documentation, transaction processes, and shipment tracking, overcoming the limitations of traditional methods
+                </li>
+                <li>
+                    Implement tools to track copra warehouse stock and monitor inventory levels in real time
+                </li>
+                <li>
+                    Design an intuitive interface that integrates seamlessly with existing business operations, making it easier for traders to adapt to digital solutions
+                </li>
+            </ol>
         </div>
 
         <div id="content-body">
@@ -80,46 +143,185 @@
         <div id="content-body">
             <h2>USER FLOW</h2>
             <img src="CocoTrade/CocoTrade-UserFlow.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac felis scelerisque, mollis felis sed, pellentesque nulla. Pellentesque at mauris suscipit, dignissim orci eget, euismod justo. Phasellus porttitor at diam vel finibus. Integer consectetur cursus sem sit amet congue. Sed ac pulvinar magna. Curabitur ac quam sit amet mauris pellentesque porttitor. Phasellus mollis velit id libero congue finibus.</p>
+            <p>Our design process was driven by firsthand industry knowledge and direct input from copra traders to ensure the platform seamlessly fits their operations.</p>
+
+            <p>To address the specific challenges traders face, we:</p>
+                
+            <ol>
+                <li>
+                    Conducted interviews with industry professionals to understand workflows and pain points
+                </li>
+                <li>
+                    Designed user flow and wireframes to simplify transaction tracking, inventory management, and shipment scheduling
+                </li>
+                <li>
+                    Built a design system focused on clear data visualization and quick-access tools
+                </li>
+                <li>
+                    Developed an intuitive dashboard to centralize key trading activities and streamline daily operations
+                </li>
+                <li>
+                    Conducted usability testing with traders to refine the platform based on real user feedback
+                </li>
+                
+            </ol>
+                
         </div>
 
         <div id="content-body">
             <h2>Wireframes</h2>
             <img src="CocoTrade/CocoTrade-Wireframes.png" alt="">
-            <p>The initial low fidelity wireframes first started with these pages: Dashboard, Inventory, Purchase and Finances as these were the four main essential core of the copra trading business. These are encompass the day-to-day operations between copra traders, farmers and the manufacturers. Our goal was to design these screens to mirror the familiar, intuitive experience of manually logging and tracking purchase records, sales, and inventory, while enhancing it with features like streamlined data entry, real-time updates, and organized record-keeping to boost efficiency and accuracy.</p>
+            <p>
+
+                CocoTrade is designed to streamline the core operations of copra trading, helping middlemen efficiently manage inventory, transactions, pricing decisions, and financial records.</p>
+                <ol>
+                    <li>
+                        Inventory Management
+                        <ul>
+                            <li>
+                                Real-time tracking of copra stock levels
+                            </li>
+                            <li>
+                                Simplified logging of purchases and sales
+                            </li>
+                            <li>
+                                Organized record-keeping for better accuracy
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Transaction Tracking
+                        <ul>
+                            <li>
+                                Digital purchase records that mirror traditional manual logging
+                            </li>
+                            <li>
+                                Streamlined data entry for efficiency
+                            </li>
+                            <li>
+                                Centralized records to reduce logistical errors
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Shipment Scheduling
+
+                        <ul>
+                            <li>
+                                Tools to track outgoing and incoming deliveries
+                            </li>
+                            <li>
+                                Calendar to plan and schedule shipment based on copra stock
+                            </li>
+                            <li>
+                                Automated summaries for easier financial oversight
+                            </li>
+                        </ul>
+                        
+                    </li>
+                    <li>
+                        Market Price Tracking
+                        <ul>
+                            <li>
+                                Live updates on world market prices for copra
+                            </li>
+                            <li>
+                                Pricing insights to help intermediaries set competitive rates for farmers
+                            </li>
+                            <li>
+                                Manufacturer price comparisons to maximize profit margins
+                            </li>
+                        </ul>
+                        
+                    </li>
+                    <li>Financial Management
+
+                        <ul>
+                            <li>
+                                Dedicated finance page to track revenue, expenses, and overall profitability
+                            </li>
+                            <li>
+                                Clear breakdown of purchase costs and sales income
+                            </li>
+                            <li>
+                                Automated summaries to help intermediaries assess business performance
+                            </li>
+                        </ul>
+                        
+                    </li>
+                </ol>
+              
+                
+                
+              
+               
+                
+                </p>
         </div>
 
         <div id="content-body">
             <h2>UI KIT</h2>
+            <class id="uikit">
             <img src="CocoTrade/CocoTradeUIKit/7.png" alt="">
             <img src="CocoTrade/CocoTradeUIKit/8.png" alt="">
             <img src="CocoTrade/CocoTradeUIKit/9.png" alt="">
             <img src="CocoTrade/CocoTradeUIKit/12.png" alt="">
+            </class>
+
+            
         </div>
+
+        <div class="image-container">
+            <h2>Prototype</h2>
+            <!-- <a href="https://www.figma.com/proto/vhvLqXCeaInhFVdsE0uptQ/CocoTrade_Wireframes-(Copy)?page-id=2842%3A19409&node-id=2842-21640&p=f&viewport=986%2C442%2C0.05&t=WKbpztcbYbTYLQGw-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2842%3A21640" target="_blank">
+              <img src="CocoTrade/CocoTrade-Prototype.png" alt="Description of Image">
+              <button class="overlay-button">Play Prototype</button>
+            </a>-->
+            
+                <iframe style="border: none;" width="900" height="500" 
+                   src="https://embed.figma.com/proto/vhvLqXCeaInhFVdsE0uptQ/CocoTrade_Wireframes-(Copy)?page-id=2842%3A19409&node-id=2842-19412&viewport=1712%2C981%2C0.2&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2842%3A19412&embed-host=share" 
+                  allowfullscreen>
+                </iframe>
+             
+          </div>
+            
 
         <div id="content-body">
             <h2>Mockup</h2>
             <img src="CocoTrade/CocoTrade-Mockup.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac felis scelerisque, mollis felis sed, pellentesque nulla. Pellentesque at mauris suscipit, dignissim orci eget, euismod justo. Phasellus porttitor at diam vel finibus. Integer consectetur cursus sem sit amet congue. Sed ac pulvinar magna. Curabitur ac quam sit amet mauris pellentesque porttitor. Phasellus mollis velit id libero congue finibus.</p>
+            <p>By modernizing essential trading processes while maintaining familiarity for users, CocoTrade enhances efficiency, improves pricing strategies, and provides better financial oversight for copra trading businesses.</p>
         </div>
 
         <div id="content-body">
             <h2>My role</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac felis scelerisque, mollis felis sed, pellentesque nulla. Pellentesque at mauris suscipit, dignissim orci eget, euismod justo. Phasellus porttitor at diam vel finibus. Integer consectetur cursus sem sit amet congue. Sed ac pulvinar magna. Curabitur ac quam sit amet mauris pellentesque porttitor. Phasellus mollis velit id libero congue finibus.</p>
+            <p>With my family’s background in the copra trading industry, I had firsthand insight into the operational challenges copra intermediaries face daily. I contributed heavily to the UX research and design process, ensuring that CocoTrade was built around real user needs. I conducted interviews with traders, mapped out user flows to streamline their workflows, and designed key wireframes for the platform. I was assigned on the Purchase and Sales Log pages, making transaction tracking intuitive while preserving the familiarity of traditional record-keeping. Additionally, I worked on CocoTrade’s branding, ensuring the platform’s visual identity aligned with its purpose—modernizing an outdated system while remaining approachable to traders.</p>
+
+                <p>This project deepened my understanding of how digital tools can transform traditional industries without disrupting existing habits. It reinforced the importance of designing with the user’s workflow in mind, balancing innovation with familiarity to drive real adoption.</p>
         </div>
     </section>
 
     <section id="pagination">
 
+    <div id="prevnext">
+            <div class="prev-arrow">
+                <a href="glucofit.html">&#9668;</a>
+            </div>
+            
+            <div id="prev-page">
+                <a href="glucofit.html"><h3>GlucoFit</h3></a>
+            </div>
+        
+    </div>
+
+    <div id="prevnext">
         <div id="next-page">
             <a href="trout.html"><h3>TROUT</h3></a>
-            <p>TRACK & ROUTE PLATFORM</p>
         </div>
         <!-- <img src="sampleimg.png" alt=""> -->
         <div class="next-arrow">
             <a href="trout.html">&#9658;</a>
         </div>
-    </section>
+
+    </div>
 
 </section>
 

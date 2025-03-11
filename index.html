@@ -8,12 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/fea91536ee.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.typekit.net/yfm5pgf.css">
+<script src="burger.js"></script>
 
 <link rel="icon" href="hl-branding.png" type="image/png">
 <link rel="shortcut icon" href="hl-branding.png" type="image/png">
@@ -21,46 +19,54 @@
 </head>
 <body>
     <section id="navigation">
-    <nav>
-    <div class="info-side">
-        <div class="logo-main">
-            <a href="index.html">
-                <img src="hl-branding.png" alt="">
-            </a>
-        </div>
-       <div class="about-short">
-        <h2>Hazel Lao<br>
-            UI/UX Design<br>
-            Vancouver, BC</h2>
-        </div>
-    </div>
-    <div class="nav-links">
-        <ul>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-    <div class="nav-socials">
-        <ul>
-            <li><a href="mailto:hzlalejandra@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-            <li><a href="https://www.linkedin.com/hazellao/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="https://www.behance.net/hazelalejandra"target="_blank"><i class="fa-brands fa-square-behance"></i></a></li>
-        </ul>
-    </div>
-
-    <footer>
-        <h4>Designed and coded by <br> Hazel Lao Ⓒ 2024</h4>
-    </footer>
-
-    </nav>
+        <nav>
+            <div class="nav-header">
+                <div class="logo-main">
+                    <a href="index.html">
+                        <img src="HL-NewLogo.png" alt="">
+                    </a>
+                </div>
+                <button class="burger-menu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <div class="nav-content">
+                <div class="about-short">
+                    <h2>Hazel Lao<br>
+                    UI/UX Design</h2>
+                    
+                </div>
+                
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#aboutme">About Me</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-socials">
+                    <ul>
+                        <li><a href="mailto:hzlalejandra@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+                        <li><a href="https://www.linkedin.com/hazellao/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.behance.net/hazelalejandra" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
+                    </ul>
+                </div>
+    
+                <footer>
+                    <h4>Designed and coded by <br> Hazel Lao Ⓒ 2024</h4>
+                </footer>
+            </div>
+        </nav>
     </section>
-
     <section id="content">
         <div id="intro">
             <h1>Hi, I'm Hazel Lao!</h1>
             <p>I’m a UI/UX Designer with a strong professional background in Graphic Design. <br> My design approach is focused on human-centered visual communication.</p>
-            <p>📍 Based in Vancouver, BC</p>
+            <h3>📍 Based in Vancouver, BC</h3>
             <!-- <button><a href="https://www.linkedin.com/hazellao/">Work with me</a></button> -->
         </div>
 
@@ -95,7 +101,7 @@
               
                 <div class="folio-content">
                     <div class="folio-img">
-                        <a href="trout.html">
+                        <a href="strava.html">
                             <img src="Covers/Strava.jpg" alt="CocoTrade Project">
                         </a>
                     </div>
@@ -107,31 +113,31 @@
 
                 <div class="folio-content">
                     <div class="folio-img">
-                        <a href="">
+                        <a href="dot.html">
                             <img src="Covers/DOT.jpg" alt="CocoTrade Project">
                         </a>
                     </div>
                     <div class="folio-info">
-                        <h4><a href="">DOT TOURISM WEBSITE REDESIGN</a></h4>
+                        <h4><a href="dot.html">PHILIPPINE TOURISM WEBSITE REDESIGN</a></h4>
                         <p>UI, Website</p>
                     </div>
                 </div>
 
                 <div class="folio-content">
                     <div class="folio-img">
-                        <a href="">
+                        <a href="loba.html">
                             <img src="Covers/LOBA.jpg" alt="CocoTrade Project">
                         </a>
                     </div>
                     <div class="folio-info">
-                        <h4><a href="">LOBA MEDICINE MANAGEMENT APP</a></h4>
-                        <p>UI/UX, Mobile App</p>
+                        <h4><a href="loba.html">LOBA MEDICINE MANAGEMENT APP</a></h4>
+                        <p>UX, Mobile App</p>
                     </div>
                 </div>
 
                 <div class="folio-content">
                     <div class="folio-img">
-                        <a href="">
+                        <a href="glucofit.html">
                             <img src="Covers/GlucoFit.jpg" alt="CocoTrade Project">
                         </a>
                     </div>
@@ -149,38 +155,103 @@
         <div id="aboutme">
             <h2 class="section-title">About Me</h2>
             <p>
-        With a background in graphic design, I’m dedicated to creating intuitive, user-focused digital experiences that is both functional and visually engaging, aiming to solve problems through design and enhance user satisfaction.
+                With a background in graphic design, I’m dedicated to creating intuitive, user-focused digital experiences that is both functional and visually engaging, aiming to solve problems through design and enhance user satisfaction.
             </p>
             
             <button><a href="https://www.dropbox.com/scl/fi/illj2vwai2nobiqy1b98x/HazelLao_Resume.pdf?rlkey=ymrbpcizrna9nkyndzrdykd4y&st=tnygnyhs&dl=0" target="_blank">Download Resume</a></button>
 
             <div id="education">
-            <h3 class="subsec-title">Education</h3>
+            <h3 class="subsec-title">MY DESIGN Process</h3>
 
         <div class="schools">
+
+
             <div id="education-info">  
-                <h4>Bachelor of Fine Arts - Advertising Arts</h4>
-                <ul>
-                <li>Bachelor's Degree</li>
-                <li>University of San Carlos</li>
-                <li>2013-2018</li>
-                 </ul>
+                <h4>Research</h4>
+                <p>Research user needs, business goals, and industry trends through competitive analysis, user interviews, and surveys.</p>
+            </div>
+            
+            <div id="education-info">  
+                <h4>Define</h4>
+                <p>Translate findings into user personas, journey maps, and problem statements to define pain points and opportunities.</p>
+            </div>
+            
+            <div id="education-info">  
+                <h4>UX Planning</h4>
+                <p>Outline user flows and create low-fidelity wireframes to structure the user experience.</p>
+            </div>
+            
+            <div id="education-info">  
+                <h4>UI Design</h4>
+                <p>Develop a UI kit, apply a design system, and create high-fidelity wireframes to establish the visual identity.</p>
+            </div>
+            
+            <div id="education-info">  
+                <h4>User Testing</h4>
+                <p>Build interactive prototypes and conduct usability testing to refine interactions and improve the design.</p>
+            </div>
+            
+            <div id="education-info">  
+                <h4>Handoff</h4>
+                <p>Collaborate with developers to ensure a seamless handoff and smooth implementation.</p>
             </div>
 
-            <div id="education-info">
-                <h4>Web & Mobile App Design & Development</h4>
-                <ul>
-                    <li>Postgrad Diploma</li>
-                    <li>Langara College</li>
-                    <li>2023-2024</li>
-                </ul>
-            </div>
+            
 
+        </div>
+
+        <div class="scroll-arrow" onclick="scrollRight()">
+            &#8594; <!-- Right arrow character -->
         </div>
 
             </div>
 
-            <div id="skillset">
+            <script>
+                // Track current position
+                let currentIndex = 0;
+                const totalItems = document.querySelectorAll('#education-info').length;
+                const visibleItems = 3;
+                
+                function scrollRight() {
+                    const container = document.querySelector('.schools');
+                    const items = document.querySelectorAll('#education-info');
+                    const cardWidth = items[0].offsetWidth;
+                    const gap = 24; // 1.5rem = 24px
+                    
+                    // Calculate next position
+                    currentIndex++;
+                    
+                    // Loop back to beginning if we reach the end
+                    if (currentIndex > totalItems - visibleItems) {
+                        currentIndex = 0;
+                    }
+                    
+                    // Scroll to the new position
+                    const scrollAmount = (cardWidth + gap) * currentIndex;
+                    container.scrollTo({
+                        left: scrollAmount,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update arrow to show left arrow if needed (optional feature)
+                    updateArrow();
+                }
+                
+                // Optional function to update arrow direction based on position
+                function updateArrow() {
+                    const arrow = document.querySelector('.scroll-arrow');
+                    
+                    if (currentIndex === 0) {
+                        arrow.innerHTML = '&#8594;'; // Right arrow at beginning
+                    } else if (currentIndex >= totalItems - visibleItems) {
+                        arrow.innerHTML = '&#8634;'; // Refresh icon at end
+                    } else {
+                        arrow.innerHTML = '&#8594;'; // Right arrow for middle positions
+                    }
+                }
+            </script>
+
+            <!-- <div id="skillset">
                 <h3 class="subsec-title">Skills</h3>
                
                 <div class="skill-columns">
@@ -207,40 +278,34 @@
                         <li>✤ Familiarity with front-end frameworks</li>
                     </ul>
                 </div>
-                </div>
+                </div> -->
 
             </div>
 
             </div>
 
             <div id="contact">
-                <h2 class="section-title">CONTACT</h2>
-            
-                <form action="https://formspree.io/f/xeojvbwy" method="POST" id="contact-form">
-                    <div class="form-row-container">
-                        <div class="form-row">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-            
-                        <div class="form-row">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                    </div>
-            
-                    <div id="message-container">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-            
-                    <button type="submit">Send Message</button>
-                </form>
+                <h2 class="section-title">Get in touch</h2>
+                <p>Check these links to see more of my work or inquire for opportunities and collab work!</p>
+
+            <div id="contact-links">
+
+                <div id="contact-info">
+                <a href="mailto:hzlalejandra@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <h3>Send me a message</h3>
+                </div>
+                <div id="contact-info">
+                <a href="https://www.linkedin.com/hazellao/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <h3>Let's Connect</h3>
+                </div>
+                <div id="contact-info">
+                <a href="https://www.behance.net/hazelalejandra" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                <h3>Graphic Design</h3>
+                </div>
+
             </div>
-
-
-
-
+            
+                
 
         </div>
     </section>

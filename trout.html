@@ -3,52 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Hazel Lao</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/fea91536ee.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/yfm5pgf.css">
-    <link rel="icon" href="hl-branding.png" type="image/png">
-    <link rel="shortcut icon" href="hl-branding.png" type="image/png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/yfm5pgf.css">
+<script src="burger.js"></script>
+
+<link rel="icon" href="hl-branding.png" type="image/png">
+<link rel="shortcut icon" href="hl-branding.png" type="image/png">
+
 </head>
 <body>
     <section id="navigation">
         <nav>
-            <div class="info-side">
+            <div class="nav-header">
                 <div class="logo-main">
                     <a href="index.html">
-                        <img src="hl-branding.png" alt="">
+                        <img src="HL-NewLogo.png" alt="">
                     </a>
                 </div>
+                <button class="burger-menu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <div class="nav-content">
                 <div class="about-short">
-                    <h2>Hazel Lao<br>UI/UX Design<br>Vancouver, BC</h2>
+                    <h2>Hazel Lao<br>
+                    UI/UX Design</h2>
+                    
                 </div>
+                
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#aboutme">About Me</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-socials">
+                    <ul>
+                        <li><a href="mailto:hzlalejandra@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+                        <li><a href="https://www.linkedin.com/hazellao/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.behance.net/hazelalejandra" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
+                    </ul>
+                </div>
+    
+                <footer>
+                    <h4>Designed and coded by <br> Hazel Lao Ⓒ 2024</h4>
+                </footer>
             </div>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="index.html#portfolio">Portfolio</a></li>
-                    <li><a href="#aboutme">About Me</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="nav-socials">
-                <ul>
-                    <li><a href="mailto:hzlalejandra@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-                    <li><a href="https://www.linkedin.com/hazellao/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://www.behance.net/hazelalejandra" target="_blank"><i class="fa-brands fa-square-behance"></i></a></li>
-                </ul>
-            </div>
-            <footer>
-                <h4>Designed and coded by <br> Hazel Lao Ⓒ 2024</h4>
-            </footer>
         </nav>
     </section>
-
     <section id="content">
 
     <section id="folio-page">
@@ -87,14 +100,16 @@
         <div id="content-body">
             <h2>COMPETITOR ANALYSIS</h2>
             <img src="Trout/Trout-CompetitorAnalysis.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac felis scelerisque, mollis felis sed, pellentesque nulla. Pellentesque at mauris suscipit, dignissim orci eget, euismod justo. Phasellus porttitor at diam vel finibus. Integer consectetur cursus sem sit amet congue. Sed ac pulvinar magna. Curabitur ac quam sit amet mauris pellentesque porttitor. Phasellus mollis velit id libero congue finibus.</p>
+            <p>In evaluating existing navigation and reporting tools, we identified key gaps that Trout aims to address. While platforms like Google Maps and Apple Maps provide general routing, they lack real-time hazard-free navigation tailored to user-reported data. Waze incorporates some user-based reporting but does not prioritize accessibility or government integration. VAN311, on the other hand, focuses on reporting infrastructure issues but lacks live hazard-free routing and a community-driven approach.</p>
+
+            <p>Trout differentiates itself by combining these features into a single, user-friendly platform. By integrating real-time hazard-free routing, community-driven reports, and a dashboard for government agencies, Trout ensures a safer and more informed navigation experience.</p>
         </div>
 
 
         <div id="content-body">
             <h2>USER FLOW</h2>
             <img src="Trout/Trout-UserFlow.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac felis scelerisque, mollis felis sed, pellentesque nulla. Pellentesque at mauris suscipit, dignissim orci eget, euismod justo. Phasellus porttitor at diam vel finibus. Integer consectetur cursus sem sit amet congue. Sed ac pulvinar magna. Curabitur ac quam sit amet mauris pellentesque porttitor. Phasellus mollis velit id libero congue finibus.</p>
+            <p>Trout focuses on two key actions: route planning and hazard reporting. Research showed users either plan trips proactively or report hazards reactively, so the flow accommodates both. Route planning allows users to compare multiple safe paths instead of following a single suggestion. Hazard reporting is streamlined into three quick steps to encourage participation, while a verification mechanism ensures data accuracy for municipal partners. Location-based features automatically display nearby hazards, making the experience more intuitive. </p>
         </div>
 
         <div id="content-body">
@@ -105,7 +120,7 @@
         <div id="content-body">
             <h2>Wireframes</h2>
             <img src="Trout/Trout-LowFi.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac felis scelerisque, mollis felis sed, pellentesque nulla. Pellentesque at mauris suscipit, dignissim orci eget, euismod justo. Phasellus porttitor at diam vel finibus. Integer consectetur cursus sem sit amet congue. Sed ac pulvinar magna. Curabitur ac quam sit amet mauris pellentesque porttitor. Phasellus mollis velit id libero congue finibus.</p>
+            <p>The low-fidelity wireframes focus on ensuring an intuitive UX by incorporating familiar UI patterns from routing apps like Google Maps and Waze. The route planning flow includes a simple map, search bar, and safety-focused route options, helping users make quick decisions. The hazard reporting flow is designed to minimize friction with a clear, easy-to-follow process. Location-based alerts automatically appear on the map, enhancing user awareness. These wireframes prioritize ease of use, allowing for rapid iteration and user testing.</p>
         </div>
 
         <div id="content-body">
@@ -116,30 +131,55 @@
         </div>
 
         <div id="content-body">
+            <h2>Prototype</h2>
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="900" height="500" src="https://embed.figma.com/proto/KOqGsWj0m1WY1276Rnq2lg/Integrated-Project-1-(Copy)?page-id=2344%3A6742&node-id=2344-18831&p=f&viewport=-907%2C327%2C0.12&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2344%3A9648&embed-host=share" allowfullscreen></iframe>
+        
+        </div>
+
+
+
+
+
+        <div id="content-body">
             <h2>Mockup</h2>
             <img src="Trout/Trout-HiFi.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac felis scelerisque, mollis felis sed, pellentesque nulla. Pellentesque at mauris suscipit, dignissim orci eget, euismod justo. Phasellus porttitor at diam vel finibus. Integer consectetur cursus sem sit amet congue. Sed ac pulvinar magna. Curabitur ac quam sit amet mauris pellentesque porttitor. Phasellus mollis velit id libero congue finibus.</p>
+            <p>Designed for commuters, tourists, and those with mobility needs, Trout balances functionality and ease of use for safer pedestrian experiences..</p>
         </div>
 
         <div id="content-body">
-            <h2>My role</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac felis scelerisque, mollis felis sed, pellentesque nulla. Pellentesque at mauris suscipit, dignissim orci eget, euismod justo. Phasellus porttitor at diam vel finibus. Integer consectetur cursus sem sit amet congue. Sed ac pulvinar magna. Curabitur ac quam sit amet mauris pellentesque porttitor. Phasellus mollis velit id libero congue finibus.</p>
+            <h2>My Role and Learnings</h2>
+            <p>As the Lead Designer, I was responsible for guiding the entire design process, from defining the user flows to creating both low- and high-fidelity designs. I led the development of the route planning and hazard reporting experiences, ensuring the UI was intuitive and easy to navigate by using familiar patterns from apps like Google Maps and Waze. I collaborated with the team to conduct user research, integrate feedback, and iterate on designs to create a seamless experience.</p>
+
+            
+            <p>This project taught me the importance of user-centered design and how familiar UI patterns can enhance usability. I learned how to balance functionality and simplicity to create an efficient user experience. Leading the design process helped me refine my skills in iteration, testing, and collaboration, ensuring the design met user needs while being visually and functionally effective.</p>
         </div>
     </section>
 
     <section id="pagination">
+        <div id="prevnext">
+        <div class="prev-arrow">
+            <a href="cocotrade.html">&#9668;</a>
+        </div>
+        
+        <div id="prev-page">
+            <a href="cocotrade.html"><h3>CocoTrade</h3></a>
+        </div>
+    
+        </div>
+
+        <div id="prevnext">
 
         <div id="next-page">
             <a href="strava.html"><h3>Strava</h3></a>
-            <p>UX Redesign</p>
         </div>
-        <!-- <img src="sampleimg.png" alt=""> -->
+        
         <div class="next-arrow">
             <a href="strava.html">&#9658;</a>
         </div>
+
+        </div>
     </section>
 
-</section>
 
 <script>
     // Reload the page when any anchor link is clicked

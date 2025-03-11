@@ -3,52 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Hazel Lao</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/fea91536ee.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/yfm5pgf.css">
-    <link rel="icon" href="hl-branding.png" type="image/png">
-    <link rel="shortcut icon" href="hl-branding.png" type="image/png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/yfm5pgf.css">
+<script src="burger.js"></script>
+
+<link rel="icon" href="hl-branding.png" type="image/png">
+<link rel="shortcut icon" href="hl-branding.png" type="image/png">
+
 </head>
 <body>
     <section id="navigation">
         <nav>
-            <div class="info-side">
+            <div class="nav-header">
                 <div class="logo-main">
                     <a href="index.html">
-                        <img src="hl-branding.png" alt="">
+                        <img src="HL-NewLogo.png" alt="">
                     </a>
                 </div>
+                <button class="burger-menu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <div class="nav-content">
                 <div class="about-short">
-                    <h2>Hazel Lao<br>UI/UX Design<br>Vancouver, BC</h2>
+                    <h2>Hazel Lao<br>
+                    UI/UX Design</h2>
+                    
                 </div>
+                
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#aboutme">About Me</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-socials">
+                    <ul>
+                        <li><a href="mailto:hzlalejandra@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+                        <li><a href="https://www.linkedin.com/hazellao/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.behance.net/hazelalejandra" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
+                    </ul>
+                </div>
+    
+                <footer>
+                    <h4>Designed and coded by <br> Hazel Lao Ⓒ 2024</h4>
+                </footer>
             </div>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="index.html#portfolio">Portfolio</a></li>
-                    <li><a href="#aboutme">About Me</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="nav-socials">
-                <ul>
-                    <li><a href="mailto:hzlalejandra@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-                    <li><a href="https://www.linkedin.com/hazellao/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://www.behance.net/hazelalejandra" target="_blank"><i class="fa-brands fa-square-behance"></i></a></li>
-                </ul>
-            </div>
-            <footer>
-                <h4>Designed and coded by <br> Hazel Lao Ⓒ 2024</h4>
-            </footer>
         </nav>
     </section>
-
     <section id="content">
 
     <section id="folio-page">
@@ -65,23 +78,31 @@
         <div id="content-body">
             <h2>About the app</h2>
             <p>Strava is an app for tracking physical exercise which also incorporates social network features.</p>
-            <p>Main Features:</p>
+            <h3>Main Features:</h3>
             <p>
-                Track and analyze activities: Strava syncs with most devices - your phone, GPS watch or head unit, heart rate monitor or power meter - and records just about any performance metric you can imagine, plus a few exclusive to Strava.
+                <b>Track and analyze activities:</b> Strava syncs with most devices - your phone, GPS watch or head unit, heart rate monitor or power meter - and records just about any performance metric you can imagine, plus a few exclusive to Strava.
             </p>
             <p>
-                Connect with friends: Friends and followers can share their own races and workouts, give kudos to great performances and leave comments on each other's activities.
+                <b>Connect with friends:</b> Friends and followers can share their own races and workouts, give kudos to great performances and leave comments on each other's activities.
             </p>
+        </div>
+
+        <div id="content-body">
+            <h2>Current Screens + User Flow</h2>
+            <div id="strava-current">
+            <img src="Strava/Strava-CurrentScreens.png" alt="" >
+            <img src="Strava/Strava-UserFlowCurrent.jpg" alt="">
+            </div>
         </div>
 
         <div id="content-body">
             <h2>PROBLEM STATEMENT</h2>
             <ol>
-                <li>Overwhelming Layout: The interface cluttered with too many features, options and menus which make it difficult to navigate.</li>
-                <li>Hidden Features: Essential features are sometimes buried within menus, making them hard to find.</li>
-                <li>Redundant Content: There are features and content that are the same in function but appear as different features. An example is the suggested routes on the Maps page.
+                <li><b>Overwhelming Layout:</b> The interface cluttered with too many features, options and menus which make it difficult to navigate.</li>
+                <li><b>Hidden Features:</b> Essential features are sometimes buried within menus, making them hard to find.</li>
+                <li><b>Redundant Content:</b> There are features and content that are the same in function but appear as different features. An example is the suggested routes on the Maps page.
                 </li>
-                <li>Paywall Lock: All functionality in the Maps page are locked behind paywall.
+                <li><b>Paywall Lock:</b> All functionality in the Maps page are locked behind paywall.
 
                 </li>
             
@@ -89,18 +110,13 @@
         </div>
 
         <div id="content-body">
-            <h2>Current Userflow</h2>
-            <img src="Strava/Strava-UserFlowCurrent.jpg" alt="">
-        </div>
-        <div id="content-body">
             <h2>Revised Userflow</h2>
             <img src="Strava/Strava-UserFlowRevised.jpg" alt="">
             <p>The updated user flow is revamped by categorizing menus and implementing a tabbed interface to enhance usability. By organizing features and functions into distinct, easily accessible tabs, users can now effortlessly navigate the app and locate the tools they need. This not only declutters the interface but also streamlines the user experience, making it more intuitive and efficient for both new and existing users.</p>
         </div>
 
         <div id="content-body">
-            <h2>Current Screens</h2>
-            <img src="Strava/Strava-CurrentScreens.png" alt="">
+            
         </div>
 
 
@@ -110,20 +126,20 @@
             <img src="Strava/Strava-Home.png" alt="">
             <p>The homepage is made more simplistic by eliminating the Message icon from the top bar buttons, and keeping it specific to posts and activity feed.</p>
             <p>
-                Top bar navigation: Buttons for this area is limited to 2 items, which are search and notifications. Users can see if there are new messages from Notification
+            <b>Top bar navigation:</b> Buttons for this area is limited to 2 items, which are search and notifications. Users can see if there are new messages from Notification
             </p>
             <p>
-                Add Button placement: This is more of a UI choice but the familiar UI pattern of adding an Add button at this placement will make it a more intuitive UX.
+                <b>Add Button placement:</b> This is more of a UI choice but the familiar UI pattern of adding an Add button at this placement will make it a more intuitive UX.
             </p>
         </div>
         <div id="content-body">
             <h3>Maps</h3>
             <img src="Strava/Strava-Maps.png" alt="">
             <p>
-                Route customization: In the current Maps screen, the customization options are below the Location bar, however the user would need to click on the Bookmark icon on the Location input field to be able to save the changes, which can be confusing and counterintuitive.In order for users to seamlessly customize and save their route, the custom options and the save button are a part of a drop down menu inside the Edit icon in the Location input field.
+            <b>Route customization:</b> In the current Maps screen, the customization options are below the Location bar, however the user would need to click on the Bookmark icon on the Location input field to be able to save the changes, which can be confusing and counterintuitive.In order for users to seamlessly customize and save their route, the custom options and the save button are a part of a drop down menu inside the Edit icon in the Location input field.
             </p>
             <p>
-                Suggested routes: The redundant content for route suggestions has been removed, and the suggested nearby routes are kept inside the bottom pull tab sheet to give ample visual space for the map.
+                <b>Suggested routes:</b> The redundant content for route suggestions has been removed, and the suggested nearby routes are kept inside the bottom pull tab sheet to give ample visual space for the map.
             </p>
         </div>
 
@@ -132,13 +148,13 @@
             <img src="Strava/Strava-Groups1.png" alt="">
             <img src="Strava/Strava-Groups2.png" alt="">
             <p>
-                Categorized tabs: The Active Tab was removed as it contained both content from Challenges and Clubs, which is redundant as the user can view these from both tabs as well. 
+                <b>Categorized tabs:</b> The Active Tab was removed as it contained both content from Challenges and Clubs, which is redundant as the user can view these from both tabs as well. 
             </p>
             <p>
-                Sort filter: In the original screen, the activity type are all listed down by horizontal scroll which the user can click to sort the content by activity.Having a drop down filter option makes it easier for the user to locate which activity they want to choose, and the selected option would then appear beside the dropdown, to make it easier for users to remember their chosen option.
+                <b>Sort filter:</b> In the original screen, the activity type are all listed down by horizontal scroll which the user can click to sort the content by activity.Having a drop down filter option makes it easier for the user to locate which activity they want to choose, and the selected option would then appear beside the dropdown, to make it easier for users to remember their chosen option.
             </p>
             <p>
-                Top bar navigation: The messages icon was removed as it was irrelevant to the Group page
+                <b>Top bar navigation:</b> The messages icon was removed as it was irrelevant to the Group page
             </p>
         </div>
 
@@ -146,10 +162,10 @@
             <h3>Profile</h3>
             <img src="Strava/Strava-Profile.png" alt="">
             <p>
-                Top bar navigation: The top bar nav now contains the Messages and the User Profile. Inside the User Profile will contain the user’s personal settings.
+                <b>Top bar navigation:</b> The top bar nav now contains the Messages and the User Profile. Inside the User Profile will contain the user’s personal settings.
             </p>
             <p>
-                Challenges overview: In the original screen, the Activity only shows posts made by the user. This section should be utilized by containing all in-app activities made by the user such as the Challenges the user has joined, people they recently followed etc. These are separated by categories and collapsible, as to make it easier for the users to scroll along each content.
+                <b>>Challenges overview:</b> In the original screen, the Activity only shows posts made by the user. This section should be utilized by containing all in-app activities made by the user such as the Challenges the user has joined, people they recently followed etc. These are separated by categories and collapsible, as to make it easier for the users to scroll along each content.
             </p>
     
         </div>
@@ -158,13 +174,13 @@
             <h3>Search</h3>
             <img src="Strava/Strava-Search.png" alt="">
             <p>
-                Search categories: The search feature in the original page only allows users to search for Friends and Clubs within the app, which is limiting. In the revised screen, the users can now easily search what category they are looking for whether it’s a post, club, or people.
+                <b>Search categories:</b> The search feature in the original page only allows users to search for Friends and Clubs within the app, which is limiting. In the revised screen, the users can now easily search what category they are looking for whether it’s a post, club, or people.
             </p>
             <p>
-                Search history: Original screen focuses on utilizing the search page to suggest people to follow without any recently searched info.
+                <b>Search history:</b> Original screen focuses on utilizing the search page to suggest people to follow without any recently searched info.
             </p>
             <p>
-                Adding people: The multiple options to add people outside of Strava will only appear once the user selects the People category as a dropdown from the Search bar.
+                <b>Adding people:</b> The multiple options to add people outside of Strava will only appear once the user selects the People category as a dropdown from the Search bar.
             </p>
     
         </div>
@@ -173,14 +189,30 @@
     </section>
        
     <section id="pagination">
-        
-        <div id="next-page">
-            <h3>DEPARTMENT OF TOURISM</h3>
-            <p>UI REDESIGN STUDY</p>
+        <div id="prevnext">
+        <div class="prev-arrow">
+            <a href="trout.html">&#9668;</a>
         </div>
-        <!-- <img src="sampleimg.png" alt=""> -->
-        <div class="next-arrow">&#9658;</div>
+        
+        <div id="prev-page">
+            <a href="trout.html"><h3>Trout</h3></a>
+        </div>
+    
+        </div>
+
+        <div id="prevnext">
+
+        <div id="next-page">
+            <a href="dot.html"><h3>DoT - PH</h3></a>
+        </div>
+        
+        <div class="next-arrow">
+            <a href="dot.html">&#9658;</a>
+        </div>
+
+        </div>
     </section>
+
 
 </section>
 

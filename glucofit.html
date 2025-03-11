@@ -3,52 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Hazel Lao</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/fea91536ee.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/yfm5pgf.css">
-    <link rel="icon" href="hl-branding.png" type="image/png">
-    <link rel="shortcut icon" href="hl-branding.png" type="image/png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/yfm5pgf.css">
+<script src="burger.js"></script>
+
+<link rel="icon" href="hl-branding.png" type="image/png">
+<link rel="shortcut icon" href="hl-branding.png" type="image/png">
+
 </head>
 <body>
     <section id="navigation">
         <nav>
-            <div class="info-side">
+            <div class="nav-header">
                 <div class="logo-main">
                     <a href="index.html">
-                        <img src="hl-branding.png" alt="">
+                        <img src="HL-NewLogo.png" alt="">
                     </a>
                 </div>
+                <button class="burger-menu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <div class="nav-content">
                 <div class="about-short">
-                    <h2>Hazel Lao<br>UI/UX Design<br>Vancouver, BC</h2>
+                    <h2>Hazel Lao<br>
+                    UI/UX Design</h2>
+                    
                 </div>
+                
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#aboutme">About Me</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-socials">
+                    <ul>
+                        <li><a href="mailto:hzlalejandra@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+                        <li><a href="https://www.linkedin.com/hazellao/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.behance.net/hazelalejandra" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
+                    </ul>
+                </div>
+    
+                <footer>
+                    <h4>Designed and coded by <br> Hazel Lao Ⓒ 2024</h4>
+                </footer>
             </div>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="index.html#portfolio">Portfolio</a></li>
-                    <li><a href="#aboutme">About Me</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="nav-socials">
-                <ul>
-                    <li><a href="mailto:hzlalejandra@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-                    <li><a href="https://www.linkedin.com/hazellao/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://www.behance.net/hazelalejandra" target="_blank"><i class="fa-brands fa-square-behance"></i></a></li>
-                </ul>
-            </div>
-            <footer>
-                <h4>Designed and coded by <br> Hazel Lao Ⓒ 2024</h4>
-            </footer>
         </nav>
     </section>
-
     <section id="content">
 
     <section id="folio-page">
@@ -86,8 +99,32 @@
 
         <div id="content-body">
             <h2>User Flow</h2>
-            <img src="GlucoFit/Glucofit-UserFlow.png" alt="">
-           
+            <div id="content-grid">
+                <div id="content-image">
+            <img src="GlucoFit/Glucofit-UserFlow.png" alt=""></div>
+            <div id="content-body">
+                <h3>Main objectives</h3>
+                <ol>
+                    <li><b>Automated Glucose Logging</b>
+                    <br>
+                        A streamlined process of blood glucose monitoring, ensuring accurate data transfer without manual entry and maintain up-to- date records of glucose levels for better tracking and diabetes management.
+                    </li>
+                    <li><b>Gamified Progress Tracking</b><br>
+                        By consistently logging glucose levels, meals, and activities, users can earn unique badges as rewards and tracking their progress streaks - keeping users motivated to a healthy lifestyle.
+                    </li>
+                    <li><b>Personalized Insights</b><br>
+                        A library of curated articles from trusted medical sources where users can educate themselves about diabetes management, health trends, and lifestyle changes which makes it easier for users to revisit.
+                        
+                    </li>
+                </ol>
+            
+
+                
+            </div>
+
+
+
+        </div>   
         </div>
 
         <div id="content-body">
@@ -108,17 +145,45 @@
 
         <div id="content-body">
             <h2>Mockup</h2>
-            <img src="GlucoFit/GlucoFit-Mockup.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac felis scelerisque, mollis felis sed, pellentesque nulla. Pellentesque at mauris suscipit, dignissim orci eget, euismod justo. Phasellus porttitor at diam vel finibus. Integer consectetur cursus sem sit amet congue. Sed ac pulvinar magna. Curabitur ac quam sit amet mauris pellentesque porttitor. Phasellus mollis velit id libero congue finibus.</p>
+            <img src="GlucoFit/GlucofitScreens.png" alt="">
+            <p>The app is focused on habit formation, accessibility, and ease of use. The UI avoids unnecessary complexity by prioritizing clear data visualization and intuitive navigation, ensuring users can quickly log glucose levels, meals, and activities without friction. The UX is structured around effortless tracking and personalized insights, making health management feel actionable rather than overwhelming. To encourage long-term engagement, we implemented gamification elements like badges and streaks, reinforcing consistency without making tracking feel like a chore. Every design choice—from hierarchy in information display to the balance between motivation and usability—was made to support users in maintaining sustainable health habits.</p>
         </div>
 
         <div id="content-body">
-            <h2>My role</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac felis scelerisque, mollis felis sed, pellentesque nulla. Pellentesque at mauris suscipit, dignissim orci eget, euismod justo. Phasellus porttitor at diam vel finibus. Integer consectetur cursus sem sit amet congue. Sed ac pulvinar magna. Curabitur ac quam sit amet mauris pellentesque porttitor. Phasellus mollis velit id libero congue finibus.</p>
+            <h2>My role and Learnings </h2>
+            <p>As the UI/UX designer assigned on the badges, streaks, and onboarding experience, I focused on creating an experience that encourages consistency without pressure. I illustrated the badges, designed the onboarding flow, and developed the app’s branding and logo, ensuring a cohesive and engaging visual identity. Beyond UI design, I was also involved in market research, user interviews, and user testing, which helped shape key UX decisions. Insights from these studies informed how we structured onboarding to reduce friction, how we refined the badge system to reinforce positive behaviors, and how we adjusted visual hierarchy to improve readability. </p>
         </div>
     </section>
 
+    <section id="pagination">
+        <div id="prevnext">
+        <div class="prev-arrow">
+            <a href="loba.html">&#9668;</a>
+        </div>
+        
+        <div id="prev-page">
+            <a href="loba.html"><h3>Loba </h3></a>
+        </div>
+    
+        </div>
+    
+        <div id="prevnext">
+    
+        <div id="next-page">
+            <a href="cocotrade.html"><h3>CocoTrade</h3></a>
+        </div>
+        
+        <div class="next-arrow">
+            <a href="cocotrade.html">&#9658;</a>
+        </div>
+    
+        </div>
+    </section>
+    
+
 </section>
+
+
 
 <script>
     // Reload the page when any anchor link is clicked
