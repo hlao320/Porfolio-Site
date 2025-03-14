@@ -477,10 +477,13 @@ button{
 }
 
 .folio-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 20px;
-        padding-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    max-width: 1200px; /* Add this to control maximum width */
+    margin: 0 auto 0 auto; /* Center the grid if screen is very wide */
+    gap: 20px;
+    padding-left: 100px;
+    align-items: center;
 }
 
 .folio-content {
@@ -509,17 +512,20 @@ button{
     width: 100%; /* Ensure it takes full width */
     aspect-ratio: 1 / 1; /* Forces the 1:1 aspect ratio */
     height: auto; /* Maintains the aspect ratio */
-    border-radius: 30px; /* Optional: Rounded top corners */
+    border-radius: 20px; /* Optional: Rounded top corners */
     object-fit: cover; /* Ensures the image covers the container */
-   /
+   
+   
 }
 
 .folio-info {
-    padding-top: 10px;
-    margin-top: auto;
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    align-items: center;/* Ensures info stays at the bottom if content height varies */
+    align-items: center;
+    padding-top: 20px;
+    min-width: 2ch; 
+    max-width: 25ch; 
+    word-wrap: break-word;
 }
 
 .folio-info h4 {
@@ -529,6 +535,7 @@ button{
     margin-top: 0;
     text-transform: uppercase;
     padding: 0 10px;
+    
 }
 
 .folio-content p {
@@ -552,6 +559,20 @@ button{
     
 }
 
+@media screen and (min-width: 1200px) {
+    .folio-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .folio-img img {
+        width: 100%; /* Ensure it takes full width */
+        height: 100%; /* Maintains the aspect ratio */
+        border-radius: 30px; /* Optional: Rounded top corners */
+        object-fit: cover; /* Ensures the image covers the container */
+       
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     #portfolio h2 {
@@ -561,9 +582,10 @@ button{
     .folio-grid {
         grid-template-columns: 1fr;
         gap: 20px;
-        justify-items: center; 
-        padding-left: 0px;/* Centers grid items horizontally */
+        justify-items: center;
+        padding-left: 0px;
     }
+
     /* If you want to clamp the font for portfolio item titles */
     .folio-info h4 {
         font-size: clamp(12px, 3vw, 18px);
@@ -713,6 +735,31 @@ button{
     letter-spacing: 5px;
 }
 
+@media screen and (min-width: 1500px) {
+    .schools {
+        display: flex;
+        overflow-x: hidden; /* Hide overflow initially */
+        scroll-behavior: smooth;
+        scrollbar-width: none; /* Hide scrollbar for Firefox */
+        -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+        gap: 20px;
+        padding-bottom: 1rem;
+        width: calc((250px * 3) + (3rem * 2)); 
+        margin-left: 100px;
+        
+      }
+
+      #education-info {
+        width: 250px; /* Narrower fixed width */
+        min-width: 220px;
+        flex: 0 0 auto;
+        padding: 10px;
+        text-align: start;
+        
+        
+      }
+}
+
 
 
 footer h4{
@@ -758,14 +805,12 @@ footer h4{
 }
 /* ---------------- CONTACT---------------- */
 
-#contact {
+#contact{
     padding-top: 30px;
+    padding-bottom: 30px;
     text-align: right;
-    padding-left: 100px;
-    padding-bottom: 100px;
-
-    max-width: 900px; /* Ensures form doesn't stretch too wide */
-   
+    border-bottom: 1px #C03C29 solid;
+    
 }
 
 #contact p{
@@ -781,7 +826,7 @@ footer h4{
 
 #contact-links {
     display: inline-flex;
-    gap: 60px;
+    gap: 80px;
 }
 
 #contact-info{
