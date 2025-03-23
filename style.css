@@ -231,7 +231,7 @@ button{
 }
 
 /* burger Mobile styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .nav-header {
         padding: 15px 20px;
         background-color:#FDF0F8;
@@ -273,7 +273,7 @@ button{
 
 
 /* burger Mobile styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     body {
         position: relative;
     }
@@ -446,7 +446,7 @@ button{
     width: max-content;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     #intro {
         padding: 0 10px; /* Matches nav header's left/right padding */
         text-align: center;
@@ -1116,7 +1116,7 @@ footer h4{
 
 /* <----------- RESPONSIVE STYLING -----------> */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     /* Switch to mobile layout */
 
     #content{
@@ -1280,7 +1280,7 @@ footer h4{
 }
 
 /* Enhanced mobile optimizations for the CocoTrade banner */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     /* Banner specific adjustments */
     #glucofit-banner,
     #strava-banner, 
@@ -1360,7 +1360,7 @@ footer h4{
 }
 
 /* Additional optimization for landscape orientation on mobile */
-@media screen and (max-width: 768px) and (orientation: landscape) {
+@media screen and (max-width: 600px) and (orientation: landscape) {
     #loba-banner, 
     #glucofit-banner, 
     #strava-banner, 
@@ -1372,7 +1372,7 @@ footer h4{
 }
 
 /* Fix excessive left padding on mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     /* Reset the portfolio page padding */
     #folio-page {
         padding-left: 20px; /* Reduced from 100px to 15px */
