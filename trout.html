@@ -1,22 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
+        <title>Hazel Lao - Trout</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/fea91536ee.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/yfm5pgf.css">
+        <script src="burger.js"></script>
     
-    <title>Hazel Lao</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/fea91536ee.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://use.typekit.net/yfm5pgf.css">
-<script src="burger.js"></script>
+        <link rel="icon" href="hl-branding.png" type="image/png">
+        <link rel="shortcut icon" href="hl-branding.png" type="image/png">
+        
+        <!-- Add custom CSS here to override any problematic styles -->
+        <style>
+            /* Mobile-specific styles */
+            @media screen and (max-width: 768px) {
+                /* Essential overrides */
+                #folio-page {
+                    padding-left: 15px !important;
+                    padding-right: 15px !important;
+                    padding-bottom: 30px !important;
+                }
+                
+                #content-body img {
+                    max-width: 100% !important;
+                    height: auto !important;
+                }
+                
+                #content-body iframe {
+                    width: 100% !important;
+                    height: 700px !important;
+                    max-width: 100% !important;
+                }
+                
+                #trout-banner {
+                    text-align: center !important;
+                    padding: 60px 15px !important; /* Increased vertical padding for better visual height */
+                    background-position: right !important; /* Center the background image */
+                    background-size:auto !important;
+                    position: relative !important;
+                    border-radius: 8px !important;
+                    overflow: hidden !important;
+                }
 
-<link rel="icon" href="hl-branding.png" type="image/png">
-<link rel="shortcut icon" href="hl-branding.png" type="image/png">
+                #content-grid{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                }
 
-</head>
+                #pagination {
+                    grid-template-columns: 1fr 1fr !important;
+                }
+                
+                #prevnext {
+                    padding-left: 0 !important;
+                    justify-content: center !important;
+                }
+                
+                /* Force body layout for mobile */
+                body {
+                    display: block !important;
+                    padding: 0 !important;
+                    width: 100% !important;
+                    overflow-x: hidden !important;
+                }
+                
+                #content {
+                    display: block !important;
+                    width: 100% !important;
+                    padding-top: 80px !important;
+                }
+            }
+            
+            /* Extra small screens */
+            @media screen and (max-width: 480px) {
+                #content-body iframe {
+                    height: 250px !important;
+                }
+            }
+        </style>
+    </head>
 <body>
     <section id="navigation">
         <nav>
@@ -82,24 +150,24 @@
 
         <div id="content-body">
             <h2>PROBLEM STATEMENT</h2>
-            <img src="Trout/Trout-Problem.png" alt="">
+            <img src="Trout/Trout-Problem.png" alt="Problem statement">
         </div>
 
         <div id="content-body">
             <h2>The Solution</h2>
-            <img src="Trout/Trout-Solution.png" alt="">
+            <img src="Trout/Trout-Solution.png" alt="Solution">
         </div>
 
 
         <div id="content-body">
             <h2>User persona</h2>
-            <img src="Trout/Trout-UserPersona1.png" alt="">
-            <img src="Trout/Trout-UserPersona2.png" alt="">
+            <img src="Trout/Trout-UserPersona1.png" alt="User persona 1">
+            <img src="Trout/Trout-UserPersona2.png" alt="User persona 2">
         </div>
 
         <div id="content-body">
             <h2>COMPETITOR ANALYSIS</h2>
-            <img src="Trout/Trout-CompetitorAnalysis.png" alt="">
+            <img src="Trout/Trout-CompetitorAnalysis.png" alt="Competitor analysis">
             <p>In evaluating existing navigation and reporting tools, we identified key gaps that Trout aims to address. While platforms like Google Maps and Apple Maps provide general routing, they lack real-time hazard-free navigation tailored to user-reported data. Waze incorporates some user-based reporting but does not prioritize accessibility or government integration. VAN311, on the other hand, focuses on reporting infrastructure issues but lacks live hazard-free routing and a community-driven approach.</p>
 
             <p>Trout differentiates itself by combining these features into a single, user-friendly platform. By integrating real-time hazard-free routing, community-driven reports, and a dashboard for government agencies, Trout ensures a safer and more informed navigation experience.</p>
@@ -108,42 +176,39 @@
 
         <div id="content-body">
             <h2>USER FLOW</h2>
-            <img src="Trout/Trout-UserFlow.png" alt="">
+            <img src="Trout/Trout-UserFlow.png" alt="User flow">
             <p>Trout focuses on two key actions: route planning and hazard reporting. Research showed users either plan trips proactively or report hazards reactively, so the flow accommodates both. Route planning allows users to compare multiple safe paths instead of following a single suggestion. Hazard reporting is streamlined into three quick steps to encourage participation, while a verification mechanism ensures data accuracy for municipal partners. Location-based features automatically display nearby hazards, making the experience more intuitive. </p>
         </div>
 
         <div id="content-body">
             <h2>Branding</h2>
-            <img src="Trout/Trout-Branding.png" alt="">
+            <img src="Trout/Trout-Branding.png" alt="Branding">
         </div>
 
         <div id="content-body">
             <h2>Wireframes</h2>
-            <img src="Trout/Trout-LowFi.png" alt="">
+            <img src="Trout/Trout-LowFi.png" alt="Wireframes">
             <p>The low-fidelity wireframes focus on ensuring an intuitive UX by incorporating familiar UI patterns from routing apps like Google Maps and Waze. The route planning flow includes a simple map, search bar, and safety-focused route options, helping users make quick decisions. The hazard reporting flow is designed to minimize friction with a clear, easy-to-follow process. Location-based alerts automatically appear on the map, enhancing user awareness. These wireframes prioritize ease of use, allowing for rapid iteration and user testing.</p>
         </div>
 
         <div id="content-body">
             <h2>UI KIT</h2>
-            <img src="Trout/Trout-Icons.png" alt="">
-            <img src="Trout/Trout-UIKit.png" alt="">
+            <img src="Trout/Trout-Icons.png" alt="Icons">
+            <img src="Trout/Trout-UIKit.png" alt="UI Kit">
         
         </div>
 
         <div id="content-body">
             <h2>Prototype</h2>
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="900" height="500" src="https://embed.figma.com/proto/KOqGsWj0m1WY1276Rnq2lg/Integrated-Project-1-(Copy)?page-id=2344%3A6742&node-id=2344-18831&p=f&viewport=-907%2C327%2C0.12&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2344%3A9648&embed-host=share" allowfullscreen></iframe>
-        
+            <div class="responsive-iframe-container">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); width: 100%; max-width: 900px; height: 700px;" src="https://embed.figma.com/proto/KOqGsWj0m1WY1276Rnq2lg/Integrated-Project-1-(Copy)?page-id=2344%3A6742&node-id=2344-18831&p=f&viewport=-907%2C327%2C0.12&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2344%3A9648&embed-host=share" allowfullscreen></iframe>
+            </div>
         </div>
-
-
-
-
 
         <div id="content-body">
             <h2>Mockup</h2>
-            <img src="Trout/Trout-HiFi.png" alt="">
-            <p>Designed for commuters, tourists, and those with mobility needs, Trout balances functionality and ease of use for safer pedestrian experiences..</p>
+            <img src="Trout/Trout-HiFi.png" alt="High fidelity mockup">
+            <p>Designed for commuters, tourists, and those with mobility needs, Trout balances functionality and ease of use for safer pedestrian experiences.</p>
         </div>
 
         <div id="content-body">
@@ -180,15 +245,31 @@
         </div>
     </section>
 
-
 <script>
-    // Reload the page when any anchor link is clicked
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        location.href = this.getAttribute('href');
-      });
+    document.addEventListener('DOMContentLoaded', function() {
+        // Toggle menu functionality
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navContent = document.querySelector('.nav-content');
+        const body = document.body;
+        
+        if (burgerMenu) {
+            burgerMenu.addEventListener('click', function() {
+                this.classList.toggle('active');
+                navContent.classList.toggle('active');
+                body.classList.toggle('menu-open');
+            });
+        }
+        
+        // Close menu when clicking a link
+        const navLinks = document.querySelectorAll('.nav-links a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                burgerMenu.classList.remove('active');
+                navContent.classList.remove('active');
+                body.classList.remove('menu-open');
+            });
+        });
     });
-  </script>
+</script>
 </body>
 </html>

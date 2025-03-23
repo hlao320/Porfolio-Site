@@ -155,8 +155,8 @@
         <div id="aboutme">
             <h2 class="section-title">About Me</h2>
             <p>
-                Graduated with a degree in Visual Design, and later a postgrad degree in Mobile and Web Design and Development at Langara College.</p>
-               <p> My work in graphic design has sharpened my eye for detail and aesthetics, which seamlessly translates into my work in UI/UX. No matter the medium, I have always applied the principle that design always serves the same purpose—to solve problems for the user and bridge gaps. 
+                Graduated with a bachelor's degree in Fine Arts majoring in Advertising Arts, followed by a postgraduate degree in Mobile and Web Design and Development at Langara College, to specialize in UI/UX.</p>
+            <p> My work in graphic design has sharpened my eye for detail and aesthetics, which seamlessly translates into my work in UI/UX. No matter the medium, I have always applied the principle that design always serves the same purpose—to solve problems for the user and bridge gaps. 
             </p>
             
             <button><a href="https://www.dropbox.com/scl/fi/p9st0h2ej1v5yox60solr/Hazel-Lao_Resume-2025.pdf?rlkey=f9xqsv5em6linifutfizk7u34&st=gwwt0sg6&dl=0" target="_blank">Download Resume</a></button>
@@ -207,51 +207,72 @@
 
             </div>
 
-            <script>
-                // Track current position
-                let currentIndex = 0;
-                const totalItems = document.querySelectorAll('#education-info').length;
-                const visibleItems = 3;
-                
-                function scrollRight() {
-                    const container = document.querySelector('.schools');
-                    const items = document.querySelectorAll('#education-info');
-                    const cardWidth = items[0].offsetWidth;
-                    const gap = 24; // 1.5rem = 24px
-                    
-                    // Calculate next position
-                    currentIndex++;
-                    
-                    // Loop back to beginning if we reach the end
-                    if (currentIndex > totalItems - visibleItems) {
-                        currentIndex = 0;
-                    }
-                    
-                    // Scroll to the new position
-                    const scrollAmount = (cardWidth + gap) * currentIndex;
-                    container.scrollTo({
-                        left: scrollAmount,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Update arrow to show left arrow if needed (optional feature)
-                    updateArrow();
-                }
-                
-                // Optional function to update arrow direction based on position
-                function updateArrow() {
-                    const arrow = document.querySelector('.scroll-arrow');
-                    
-                    if (currentIndex === 0) {
-                        arrow.innerHTML = '&#8594;'; // Right arrow at beginning
-                    } else if (currentIndex >= totalItems - visibleItems) {
-                        arrow.innerHTML = '&#8634;'; // Refresh icon at end
-                    } else {
-                        arrow.innerHTML = '&#8594;'; // Right arrow for middle positions
-                    }
-                }
-            </script>
+            
 
+            <!-- Add this script to the bottom of your HTML file, just before the closing </body> tag -->
+<script>
+    // Track current position
+    let currentIndex = 0;
+    const totalItems = document.querySelectorAll('#education-info').length;
+    const visibleItems = 3;
+    
+    function scrollRight() {
+        // Check if we're on mobile (arrow is hidden) - no need to execute this function
+        if (window.innerWidth <= 768) {
+            return;
+        }
+        
+        const container = document.querySelector('.schools');
+        const items = document.querySelectorAll('#education-info');
+        const cardWidth = items[0].offsetWidth;
+        const gap = 24; // 1.5rem = 24px
+        
+        // Calculate next position
+        currentIndex++;
+        
+        // Loop back to beginning if we reach the end
+        if (currentIndex > totalItems - visibleItems) {
+            currentIndex = 0;
+        }
+        
+        // Scroll to the new position
+        const scrollAmount = (cardWidth + gap) * currentIndex;
+        container.scrollTo({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+        
+        // Update arrow to show left arrow if needed (optional feature)
+        updateArrow();
+    }
+    
+    // Optional function to update arrow direction based on position
+    function updateArrow() {
+        const arrow = document.querySelector('.scroll-arrow');
+        if (!arrow) return; // Guard clause if arrow doesn't exist (mobile)
+        
+        if (currentIndex === 0) {
+            arrow.innerHTML = '&#8594;'; // Right arrow at beginning
+        } else if (currentIndex >= totalItems - visibleItems) {
+            arrow.innerHTML = '&#8634;'; // Refresh icon at end
+        } else {
+            arrow.innerHTML = '&#8594;'; // Right arrow for middle positions
+        }
+    }
+    
+    // Add window resize listener to handle transitions between mobile and desktop
+    window.addEventListener('resize', function() {
+        // Reset the scroll position when switching between viewports
+        if (window.innerWidth <= 768) {
+            // On mobile, just let native scrolling take over
+            const container = document.querySelector('.schools');
+            if (container) {
+                currentIndex = 0;
+                container.scrollLeft = 0;
+            }
+        }
+    });
+</script>
             <!-- <div id="skillset">
                 <h3 class="subsec-title">Skills</h3>
                

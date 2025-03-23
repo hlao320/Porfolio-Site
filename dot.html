@@ -16,6 +16,74 @@
 <link rel="icon" href="hl-branding.png" type="image/png">
 <link rel="shortcut icon" href="hl-branding.png" type="image/png">
 
+<style>
+    /* Mobile-specific styles */
+    @media screen and (max-width: 768px) {
+        /* Essential overrides */
+        #folio-page {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+            padding-bottom: 30px !important;
+        }
+        
+        #content-body img {
+            max-width: 100% !important;
+            height: auto !important;
+        }
+
+        #content-grid{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        
+        #content-body iframe {
+            width: 100% !important;
+            height: 350px !important;
+            max-width: 100% !important;
+        }
+        
+        #dot-banner {
+            text-align: center !important;
+                    padding: 60px 15px !important; /* Increased vertical padding for better visual height */
+                    background-position: right !important; /* Center the background image */
+                    background-size:auto !important;
+                    position: relative !important;
+                    border-radius: 8px !important;
+                    overflow: hidden !important;
+        }
+        
+        #pagination {
+            grid-template-columns: 1fr 1fr !important;
+        }
+        
+        #prevnext {
+            padding-left: 0 !important;
+            justify-content: center !important;
+        }
+        
+        /* Force body layout for mobile */
+        body {
+            display: block !important;
+            padding: 0 !important;
+            width: 100% !important;
+            overflow-x: hidden !important;
+        }
+        
+        #content {
+            display: block !important;
+            width: 100% !important;
+            padding-top: 80px !important;
+        }
+    }
+    
+    /* Extra small screens */
+    @media screen and (max-width: 480px) {
+        #content-body iframe {
+            height: 250px !important;
+        }
+    }
+</style>
+
 </head>
 <body>
     <section id="navigation">
@@ -160,7 +228,7 @@
 
         <div id="content-body">
             <h2>REDESIGN</h2>
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="650" src="https://embed.figma.com/proto/UwRr72lKURqiJYdPVRmZ6p/DOT-Website-Redesign?page-id=0%3A1&node-id=1-2&viewport=-16%2C366%2C0.37&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&embed-host=share" allowfullscreen></iframe>
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="700px" src="https://embed.figma.com/proto/UwRr72lKURqiJYdPVRmZ6p/DOT-Website-Redesign?page-id=0%3A1&node-id=1-2&viewport=-16%2C366%2C0.37&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&embed-host=share" allowfullscreen></iframe>
             <h3>IMPROVEMENTS</h3>
             <p>
             <ol>
