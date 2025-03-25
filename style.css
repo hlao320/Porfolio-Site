@@ -65,7 +65,7 @@ body {
     display: grid;
     grid-template-columns: 250px 1fr;
     margin: 0;
-    padding: 0 clamp(10px, 5vw, 100px);
+    padding: 0 clamp(10px, 5vw, 150px);
     background: radial-gradient(circle at right, rgba(192, 60, 41, 0.3) 0%, #FDF0F8 40%);
     background-attachment: fixed;
     
@@ -511,9 +511,10 @@ button{
 
 .folio-grid {
     display: grid;
+   
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding-left: clamp(20px, 5vw, 100px);
 }
@@ -610,7 +611,7 @@ button{
 
     .folio-img img {
         width: 100%; /* Ensure it takes full width */
-        height: 100%; /* Maintains the aspect ratio */
+       /* Maintains the aspect ratio */
         border-radius: 30px; /* Optional: Rounded top corners */
         object-fit: cover; /* Ensures the image covers the container */
        
@@ -670,35 +671,42 @@ button{
   }
   
   /* Horizontal scrolling container - limited to show only 3 items */
-  .schools {
+  /* .schools {
     display: flex;
-    overflow-x: hidden; /* Hide overflow initially */
+    overflow-x: hidden; 
     scroll-behavior: smooth;
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
-    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
     gap: 20px;
-    padding-bottom: 1rem;
-    width: calc((220px * 3) + (3rem * 2)); 
+   
+    width: calc((220px * 3) + (4rem * 2)); 
     margin-left: 100px;
 
     
     
   }
+   */
+
+   .schools{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 100px;
+   }
   
-  /* Hide scrollbar for Chrome/Safari */
-  .schools::-webkit-scrollbar {
-    display: none;
-  }
   
   /* Card styles - keeping original ID but making narrower */
   #education-info {
-    width: 220px; /* Narrower fixed width */
-    min-width: 240px;
-    flex: 0 0 auto;
-    padding: 10px;
+    width: 100%;/* Narrower fixed width */
+    min-width: 100px;
+    padding: 50px;
     text-align: start;
     
     
+  }
+
+  /* Hide scrollbar for Chrome/Safari */
+  .schools::-webkit-scrollbar {
+    display: none;
   }
 
   #education-info li{
@@ -1126,6 +1134,7 @@ footer h4{
     body {
         display: block;
         padding: 0;
+        background: radial-gradient(circle at right, rgba(192, 60, 41, 0.3) 0%, #FDF0F8 50%);
         background-attachment: fixed;
     }
 
@@ -1190,6 +1199,10 @@ footer h4{
         
         object-fit: cover;
     }
+
+    .folio-page{
+        padding: 10;
+    }
     
     .folio-content {
         padding: 15px;
@@ -1226,6 +1239,7 @@ footer h4{
     
     /* Enable touch-based horizontal scrolling on mobile */
     .schools {
+        display: inline-flex;
         overflow-x: auto; /* Change from hidden to auto to enable scrolling */
         -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
         padding-bottom: 16px; /* Space for the scrollbar */
@@ -1299,6 +1313,7 @@ footer h4{
         display: block;
         padding: 0;
         background-attachment: fixed;
+        background: radial-gradient(circle at right, rgba(192, 60, 41, 0.3) 0%, #FDF0F8 50%);
     }
 
     .logo-main img {
@@ -1398,6 +1413,9 @@ footer h4{
     
     /* Enable touch-based horizontal scrolling on mobile */
     .schools {
+        display: inline-flex;
+        
+        gap: 20px;
         overflow-x: auto; /* Change from hidden to auto to enable scrolling */
         -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
         padding-bottom: 16px; /* Space for the scrollbar */
@@ -1533,6 +1551,10 @@ footer h4{
         position: relative;
         border-radius: 8px;
         overflow: hidden;
+    }
+
+    .folio-page{
+        padding: 0;
     }
     
     /* Add a subtle darkening overlay to improve text readability on mobile */
@@ -1689,3 +1711,7 @@ footer h4{
         font-size: 16px;
     }
 } */
+
+
+
+    
